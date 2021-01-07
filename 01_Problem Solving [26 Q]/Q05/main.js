@@ -7,8 +7,16 @@ Have the function FindIntersection(strArr) read the array of strings stored in s
 */
 
 function findIntersection(strArr) {
-  // YOUR CODE HERE
-  
+  let intersection = [];
+
+  strArr[0].split(", ").forEach((char0) => {
+    strArr[1].split(", ").forEach((char1) => {
+      if (char0 === char1) intersection.push(char1);
+    });
+  });
+
+  if (intersection.length === 0) return false;
+  else return intersection;
 }
 
 /* 
