@@ -7,7 +7,11 @@ Have the function LongestWord(sen) take the sen parameter being passed and retur
 */
 
 function longestWord(sen) {
-  // YOUR CODE HERE
+  let longest = "";
+  sen.split(" ").forEach((element) => {
+    if (element.length > longest.length) longest = element;
+  });
+  return longest;
 }
 
 /* 
