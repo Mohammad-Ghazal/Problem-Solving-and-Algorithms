@@ -14,7 +14,13 @@ If the username is valid then your program should return the string true, otherw
 */
 
 function usernameValidation(str) {
-  // YOUR CODE HERE
+
+return (
+  4 < str.length < 25 &&isNaN(str[0])&&
+  str[0].toLowerCase() != str[0].toUpperCase() &&
+  str[str.length - 1] != "_"
+);
+
 }
 
 /* 
