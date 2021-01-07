@@ -7,7 +7,11 @@ Write a function that returns the sum of odd numbers in an array.
 */
 
 function SumOddNumber() {
-  // YOUR CODE HERE
+  let Summation_result = 0;
+  nums.map((num) => {
+    if (num % 2 !== 0) Summation_result += num;
+  });
+  return Summation_result;
 }
 
 /* 
